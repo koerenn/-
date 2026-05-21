@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отчет по практике</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Шапка / Баннер -->
+    <div class="banner-container" onclick="openLightbox(0)">
+        <!-- Вставьте сюда свою картинку для баннера -->
+        <img src="https://picsum.photos" alt="Титульный слайд" class="banner-img" id="mainBannerImg">
+        <div class="banner-text">
+            <h1>Отчет по учебной практике <br>Учащегося: Наклескина В.А. <br>Группа: Р-222</h1>
+            <p>Нажмите для просмотра отчета</p>
+        </div>
+    </div>
+
+    <!-- Двухколоночный контент -->
+    <main class="main-container">
+        
+        <!-- Левая колонка: Содержание -->
+        <aside class="sidebar">
+            <h3>Дневник  </h3>
+            <nav>
+                <ul>
+                    <li><a href="#chapter1">Глава 1: Фотографии</a></li>
+                    <li><a href="#chapter2">Глава 2: Созданные сайты</a></li>
+                    <li><a href="#chapter3">Глава 3: Итоги практики</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Правая колонка: Текст отчета -->
+        <article class="content">
+            
+            <section id="chapter1">
+                <h2>Глава 1: Фотографии</h2>
+                <p>В данном разделе представлены фотографии разных категорий: от портретов в различных стилях до каталожной съемки предметов, сделанные самостоятельно для рекламных баннеров, собственного портфолио, каталогов на сайтах.</p>
+                <p>Список стилей работ: 
+                    Световые схемы освещения: рембрандт, петля, бабочка, портрет в темной и светлой тональности.
+                    Каталожная фотография: декоративная и уходовая косметика, одежда, головные уборы, обувь, продукты питания, напитки, бытовая и компьютерная техника, профессиональное оборудование.</p>
+                <img src="images/three.JPG" alt="Фотографии" class="report-img">
+                <img src="images/girlred.JPG" alt="Фотографии" class="report-img">
+                <img src="images/hats.jpg" alt="Фотографии" class="report-img"             
+            </section>
+
+            <section id="chapter2">
+                <h2>Глава 2: Созданные сайты</h2>
+                <p>Скриншоты сайтов, для которых использовались сделанные ранее фотографии.</p>
+                <img src="images/portfolio.png" alt="Производство" class="report-img">
+            </section>
+
+            <section id="chapter3">
+                <h2>Глава 3: Итоги практики</h2>
+                <p>Чему я научилась как начинающий профессионал по рекламе за время учебной практики в сфере своей специальности за время этой учебной практики:
+ <br> </br> 
+                 <br>   Настраивать фотоаппарат и свет, чтобы получить нужную игру света и теней для съемки портрета или объектов разных категорий. </br> 
+                   <br>  Правильно снимать объект, чтобы он был в фокусе, края объекта не обрезались, кадр был динамичным и приятным.</br>
+                  <br>   Ретушировать и обрабатывать сделанные фотографии, чтобы ретушь была уместной и незаметной.</br>
+                   <br>  Создавать собственные сайты с рекламой.</br>
+                   <br>  Делать элементы на сайтах интерактивными.</br>
+                   <br>  Основам использования платформы гитхаб.</br>
+                </p>
+            </section>
+
+        </article>
+    </main>
+
+    <!-- Лайтбокс для пролистывания картинок баннера -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-btn close-btn" onclick="closeLightbox()">&times;</button>
+        <button class="lightbox-btn prev-btn" onclick="changeImage(-1)">&#10094;</button>
+        <img src="" alt="Увеличенное изображение" class="lightbox-img" id="lightboxImg">
+        <button class="lightbox-btn next-btn" onclick="changeImage(1)">&#10095;</button>
+    </div>
+
+    <!-- Логика JavaScript -->
+   <script src="script.js"></script>
+</body>
+</html>
+
+
